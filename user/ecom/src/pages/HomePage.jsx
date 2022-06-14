@@ -10,6 +10,9 @@ import HomeTop from '../components/home/HomeTop'
 import HomeTopMobile from '../components/home/HomeTopMobile'
 import NewArrival from '../components/home/NewArrival'
 export class HomePage extends Component {
+    componentDidMount(){
+        window.scroll(0,0)
+   }
     render() {
         
         return (

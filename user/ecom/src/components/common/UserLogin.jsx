@@ -24,6 +24,8 @@ class UserLogin extends Component {
 
                     <Col className="p-0 Desktop m-0" md={6} lg={6} sm={6} xs={6}>
                          <img className="onboardBanner" src={Login} />
+                        
+                 
                     </Col>
                </Row>
 
