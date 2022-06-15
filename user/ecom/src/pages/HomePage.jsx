@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react'
+import AppURL from '../api/AppURL'
 import { FooterDesktop } from '../components/common/FooterDesktop'
 import FooterMobile from '../components/common/FooterMobile'
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
@@ -9,38 +10,44 @@ import FeaturedProducts from '../components/home/FeaturedProducts'
 import HomeTop from '../components/home/HomeTop'
 import HomeTopMobile from '../components/home/HomeTopMobile'
 import NewArrival from '../components/home/NewArrival'
+import axios from 'axios'
 export class HomePage extends Component {
-    componentDidMount(){
-        window.scroll(0,0)
-   }
+    componentDidMount() {
+        window.scroll(0, 0);
+        this.GetVisitorDetails();
+    }
+
+    GetVisitorDetails = () => {
+        axios.get(AppURL.VisitorDetails).then().catch()
+    }
     render() {
-        
+
         return (
-            
+
             <Fragment>
                 <div className="Desktop">
-               <NavMenuDesktop />
-               <HomeTop />
-                    </div>
+                    <NavMenuDesktop />
+                    <HomeTop />
+                </div>
 
-                    <div className="Mobile">
-                    <NavMenuMobile />  
+                <div className="Mobile">
+                    <NavMenuMobile />
                     <HomeTopMobile />
-                    </div>                       
+                </div>
 
-               
-        
+
+
                 <FeaturedProducts />
-                <NewArrival/>
-                <Categories/>
-                <Collection/>
-                
+                <NewArrival />
+                <Categories />
+                <Collection />
+
                 <div className="Desktop">
-                <FooterDesktop/>
+                    <FooterDesktop />
                 </div>
                 <div className="Mobile">
-                    <FooterMobile/>
-                    </div>
+                    <FooterMobile />
+                </div>
             </Fragment>
         )
     }
