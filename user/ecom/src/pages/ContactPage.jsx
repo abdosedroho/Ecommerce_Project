@@ -9,26 +9,26 @@ import NavMenuMobile from '../components/common/NavMenuMobile'
 class ContactPage extends Component {
      render() {
           return (
-               <Fragment> 
-               <div className="Desktop">
-                <NavMenuDesktop /> 
-               </div>
+               <Fragment>
+                    <div className="Desktop">
+                         <NavMenuDesktop />
+                    </div>
 
-               <div className="Mobile">
-               <NavMenuMobile />  
-               </div>                       
+                    <div className="Mobile">
+                         <NavMenuMobile />
+                    </div>
 
-               <Contact /> 
+                    <Contact />
 
-               <div className="Desktop">
-               <FooterDesktop/>
-               </div>
+                    <div className="Desktop">
+                         <FooterDesktop />
+                    </div>
 
-               <div className="Mobile">
-               <FooterMobile/>
-               </div>
+                    <div className="Mobile">
+                         <FooterMobile />
+                    </div>
 
-          </Fragment>
+               </Fragment>
           )
      }
 }
