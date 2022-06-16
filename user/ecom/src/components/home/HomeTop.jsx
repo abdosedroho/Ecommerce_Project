@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import MegaMenu from './MegaMenu'
 import HomeSlider from './HomeSlider'
-import AppURL from '../../api/AppURL';
+import AppURL from '../../api/AppURL'
 import axios from 'axios'
 
 class HomeTop extends Component {

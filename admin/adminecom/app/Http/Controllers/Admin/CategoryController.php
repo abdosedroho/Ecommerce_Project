@@ -15,11 +15,11 @@ class CategoryController extends Controller
         $categoryDetailsArray =[];
         foreach ($categories as $value)
         {
-            $Subcategory= Subcategory::where('category_name',$value['category_name'])->get();
+            $subcategory= Subcategory::where('category_name',$value['category_name'])->get();
             $item =[
                 'category_name'=>$value['category_name'],
-                'category_iamge'=>$value['category_name'],
-                'subcategory_name'=>$Subcategory
+                'category_image'=>$value['category_image'],
+                'Subcategory_name'=>$subcategory
             ];
             array_push($categoryDetailsArray,$item);
         }
