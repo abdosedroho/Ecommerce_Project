@@ -14,4 +14,17 @@ class ProductListController extends Controller
         return productlist;
 
     }
+    public function ProductListByCategory(Request $request){
+        $Category=$request ->category ;
+        $productlist = ProductList::where('category',$Category)->get();
+        return productlist;
+
+    }
+    public function ProductListBySubCategory(Request $request){
+        $Category=$request ->category ;
+        $SubCategory=$request ->subcategory ;
+        $productlist = ProductList::where('category',$Category)->where('subcategory',$SubCategory)->get();
+        return productlist;
+
+    }
 }
