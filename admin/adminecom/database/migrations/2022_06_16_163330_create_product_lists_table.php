@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('category');
             $table->string('subcategory');
             $table->string('remark');
-            $table->string('prand');
+            $table->string('brand');
             $table->string('star');
             $table->string('product_code');
             $table->timestamps();

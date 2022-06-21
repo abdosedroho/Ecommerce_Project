@@ -41,20 +41,20 @@ class FeaturedProducts extends Component {
 
            else{
 
-            return  <Col className="p-1" key={1} xl={2} lg={2} md={2} sm={4} xs={6}>
-            <Link to="/productdetails">
- <Card className="image-box card">
- <img className="center" src={FeaturedList.image} />   
- <Card.Body> 
-<p className="product-name-on-card">{FeaturedList.title}</p>
- <p className="product-price-on-card">Price : <strike className="text-secondary">${FeaturedList.price}</strike> ${FeaturedList.special_price}</p>
+               return  <Col className="p-1" key={1} xl={2} lg={2} md={2} sm={4} xs={6}>
+               <Link to="/productdetails">
+    <Card className="image-box card">
+    <img className="center" src={FeaturedList.image} />   
+    <Card.Body> 
+   <p className="product-name-on-card">{FeaturedList.title}</p>
+    <p className="product-price-on-card">Price : <strike className="text-secondary">${FeaturedList.price}</strike> ${FeaturedList.special_price}</p>
 
- </Card.Body>
-  </Card>
-  </Link>
-       </Col>
+    </Card.Body>
+     </Card>
+     </Link>
+          </Col>
 
-       } 
+          } 
 
 
 
